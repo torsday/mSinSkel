@@ -6,7 +6,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :user_name
       t.string :email
       t.string :password_hash
-      t.string :token
+      t.string :perishable_token
 
       t.timestamps
     end
