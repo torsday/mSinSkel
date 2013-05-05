@@ -1,4 +1,15 @@
-our_wedding
+# My Skeleton App
 ===========
 
-Sadler-Torstenson
+## Includes
+- Sinatra Skeleton
+- User migration
+  - first_name
+  - last_name
+  - user_name
+  - email
+  - password_hash
+  - timestamps
+- User model
+- User Authorization
+  - bcrypt
