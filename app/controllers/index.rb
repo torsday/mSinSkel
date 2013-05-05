@@ -1,3 +1,7 @@
+get '/' do
+  erb :index
+end
+
 get '/resources' do
   # Typically the index of a resource returns a collection of the resources
   # For instances, a blog may have a '/' route that returns all the articles

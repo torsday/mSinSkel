@@ -1,0 +1,35 @@
+<div class="container">
+  <h1>Sign Up</h1>
+
+  <div id="errors"><%= erb :_model_errors, :layout => false, :locals => { :model => @user } %></div>
+
+  <form id="sign-up" method="post" action="/users">
+    <label class="label" for="first_name">First Name</label>
+    <input type="text" name="user[first_name]" placeholder="e.g., Joe" value="<%= @user.first_name %>">
+    <span id="first_name-errors" class="errors"></span>
+    <br>
+
+    <label class="label" for="last_name">Last Name</label>
+    <input type="text" name="user[last_name]" placeholder="e.g. Smith" value="<%= @user.last_name %>">
+    <span id="last_name-errors" class="errors"></span>
+    <br>
+
+    <label class="label" for="email">Email</label>
+    <input type="email" name="user[email]" placeholder="e.g., me@example.com" value="<%= @user.email %>">
+    <span id="email-errors" class="errors"></span>
+    <br>
+
+    <label class="label" for="user_name">User Name</label>
+    <input type="text" name="user[user_name]" placeholder="e.g., jsmith" value="<%= @user.user_name %>">
+    <span id="user_name-errors" class="errors"></span>
+    <br>
+
+    <label class="label" for="password">Password</label>
+    <input type="password" name="user[password]" placeholder="6 or more characters">
+    <span id="entered_password-errors" class="errors"></span>    
+    <br>
+
+    <div class="submit"><input type="submit" value="Sign Up"></div>
+  </form>
+
+</div>

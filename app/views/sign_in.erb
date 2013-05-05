@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Sign In</h1>
+
+  <% if @error %>
+    <div class="errors"><%= @error %></div>
+  <% end %>
+
+  <form id="sign-in" method="post" action="/sessions">
+    <label class="label" for="user_name">user_name</label>
+    <input type="text" name="user_name" placeholder="e.g., jsmith" value="<%= @user_name %>"><br>
+    <label class="label" for="password">Password</label>
+    <input type="password" name="password" placeholder="6 or more characters">
+    <br>
+    <div class="submit"><input type="submit" value="Sign In"></div>
+  </form>
+
+</div>
