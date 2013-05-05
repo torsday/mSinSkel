@@ -13,3 +13,7 @@
 - User model
 - User Authorization
   - bcrypt
+
+## To Do
+- switch session to user tokens
+- further CSS refinement
