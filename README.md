@@ -1,6 +1,13 @@
 # My Skeleton App
 ===========
 
+## Directions
+
+1. In github, make [a new repo](https://github.com/new)
+1. ```git clone https://github.com/ctorstens/mSinSkel.git```
+1. Move into the cloned directory
+1. ```$ git remote set-url origin <new_repo_url>```
+
 ## Includes
 - Sinatra Skeleton
 - User migration
