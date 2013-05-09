@@ -1,6 +1,6 @@
-class CreateGoogleUserTable < ActiveRecord::Migration
+class CreateGoogleAccountTable < ActiveRecord::Migration
   def change
-    create_table :google_users do |t|
+    create_table :google_accounts do |t|
       t.string :code
       t.string :authuser
       t.string :session_state
