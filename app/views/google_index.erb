@@ -1,0 +1,6 @@
+<div class="container">
+  <% if session[:user_photo] %>
+    <img src="<%= session[:user_photo] %>">
+  <% end %>
+  <a href="<%= @url %>">Click me</a>
+</div>

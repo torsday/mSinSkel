@@ -33,3 +33,5 @@ Dir[APP_ROOT.join('app', 'helpers', '*.rb')].each { |file| require file }
 require APP_ROOT.join('config', 'database')
 
 require 'bcrypt'
+
+require 'oauth2'
