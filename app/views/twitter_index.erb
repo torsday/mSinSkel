@@ -1,0 +1,18 @@
+
+<h1>Tweet Now! 2: Multi-User</h1>
+
+<%
+  # In our real-world application, this is not what we want. Instead, we should
+  # be checking to see if there is currently a user logged-in, and if there is,
+  # we should show her a form that will allow her to send a tweet. If there is no
+  # user logged-in, we should show the sign-in button.
+%>
+<% if session[:twitwter_id] %>
+      
+  <form class="send_tweet">
+    <textarea name="tweet" placeholder="Put your tweet here!"></textarea>
+    <input type="submit" value="Tweet">
+  </form>
+<% else %>
+  <button><a href="twitter/sign_in">Sign In with Twitter</a></button>
+<% end %>

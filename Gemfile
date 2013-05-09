@@ -23,3 +23,6 @@ group :test do
 end
 
 gem 'bcrypt-ruby'
+
+gem 'twitter'
+gem 'oauth'
